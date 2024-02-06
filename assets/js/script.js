@@ -1,4 +1,4 @@
-// Toggle Icon Navbar
+/* =============== Toggle Icon Navbar =============== */
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -7,6 +7,7 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 
+/* =============== Scroll Sections Active Link  =============== */
 // Scroll sections active link
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
@@ -26,17 +27,17 @@ window.onscroll = () => {
         };
     });
 
-    // Sticky Navbar
+    /* =============== Sticky Navbar =============== */
     let header = document.querySelector('header');
 
     header.classList.toggle('sticky', window.scrollY > 100);
 
-    // Remove toggle icon and navbar when click navbar links (scroll)
+    /* ===== Remove toggle icon and navbar when click navbar links (scroll) ====== */
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
 
-// Scroll Reveal
+/* =============== Scroll Reveal =============== */
 ScrollReveal({ 
     // reset: true,
     distance: '80px',
@@ -49,7 +50,7 @@ ScrollReveal().reveal('.home-img, .experiences-container, .projects-box, .contac
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
-// typed js
+/* =============== Typed JS =============== */
 const typed = new Typed('.multiple-text', {
     strings: ['Web Developer', 'Game Developer', 'Frontend Developer'],
     typeSpeed: 100,

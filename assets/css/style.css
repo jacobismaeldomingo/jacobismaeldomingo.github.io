@@ -189,14 +189,17 @@ span {
     margin: 2rem 0 3rem;
 }
 
+.experiences {
+    padding: 8rem 9% 2rem;
+}
+
 .experiences h2 {
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
 }
 
 .experiences-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
 }
@@ -222,7 +225,7 @@ span {
 }
 
 .experiences-box h3 {
-    font-size: 2.6rem;
+    font-size: 2rem;
 }
 
 .experiences-box p {
@@ -230,6 +233,39 @@ span {
     margin: 1rem 0 3rem;
 }
 
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: space-around;
+    align-content: space-around;
+    margin: 2rem 0 2rem 0;
+    height: 350px;
+    align-items: flex-start;
+}
+
+.article-container article {
+    margin-top: -5px;
+}
+  
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 1rem;
+    align-items: center;
+}
+
+article .icon {
+    cursor: default;
+    height: 4rem;
+}
+
+article div {
+    white-space: nowrap;
+}
+  
 .projects {
     background: var(--second-bg-color);
 }
